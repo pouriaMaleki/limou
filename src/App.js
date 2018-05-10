@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import css from "./App.module.sass"
+import { Router, Route } from "react-router-dom";
+import Home from "./home/Home";
+// import css from "./App.module.sass"
 
 class App extends Component {
   render() {
     return (
-      <div className={css.container}>
-        CSS Modules
-      </div>
+      <Router>
+        <Route exact path="/" component={Home} />
+      </Router>
     );
   }
 }
