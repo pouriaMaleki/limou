@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.43",
+    "material-ui": "^1.0.0-beta.47",
     "node-sass": "^4.9.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router-dom": "^4.2.2",
     "react-scripts": "2.0.0-next.66cc7a90",
+    "roboto-fontface": "^0.9.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   },
