@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
-import Divider from 'material-ui/Divider';
-import { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import Drawer from 'material-ui/Drawer';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MenuIcon from '@material-ui/icons/Menu';
 import css from "./AppLayout.module.sass"
+import MenuItems from "./MenuItems"
 
 class AppLayout extends Component {
   state = {
@@ -44,23 +42,7 @@ class AppLayout extends Component {
             onKeyDown={this.toggleDrawer(false)}
           >
             <div className={css.list}>
-              <div>
-                <ListItem button>
-                  <ListItemIcon>
-                    <InboxIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Inbox" />
-                </ListItem>
-              </div>
-              <Divider />
-              <div>
-                <ListItem button>
-                  <ListItemIcon>
-                    <InboxIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Drafts" />
-                </ListItem>
-              </div>
+              <MenuItems/>
             </div>
           </div>
         </Drawer>
